@@ -15,7 +15,6 @@ const reply = (teks) => {
 }
 
 switch (command) {
-  switch(command) {
 case "menu":
        case "help":
        await loading()
@@ -37,5 +36,17 @@ sᴇʟᴀᴍᴀᴛ ${salam}😄
 
 copyright *©TaaOfc* and all rights reserved`, gifPlayback: true }, { quoted: m })
 break
+//=================================================
+case 'tiktokvideo':{
+if (!isCreator) return m.reply('*khusus Premium*')
+if (!text) return m.reply( `Example : ${prefix + command} link`)
+if (!q.includes('tiktok')) return m.reply(`Link Invalid!!`)
+await loading ()
+require('./lib/tiktok').Tiktok(q).then( data => {
+haikal.sendMessage(m.chat, { video: { url: data.nowm }}, { quoted: m })
+})
+}
+break
+//=================================================      
 }
 }
