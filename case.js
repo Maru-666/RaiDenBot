@@ -15,9 +15,27 @@ const reply = (teks) => {
 }
 
 switch (command) {
-  case "tes": {
-    reply("On Kak!!!")
-  }
-  break
+  switch(command) {
+case "menu":
+       case "help":
+       await loading()
+       var mnn = fs.readFileSync('./baseikal/video/menupt2.mp4')
+       haikal.sendMessage(from, { video: mnn, caption: `
+
+*ʜᴀʟʟᴏ ᴋᴀᴋ ${pushname}👋.* 
+sᴇʟᴀᴍᴀᴛ ${salam}😄
+ɴᴀᴍᴀ ꜱᴀyᴀ ᴀᴅᴀʟᴀʜ *ʀʏᴏ ʏᴀᴍᴀᴅᴀ*
+
+ʙᴏᴛ ɪɴɪ ᴅᴀᴘᴀᴛ ᴅɪɢᴜɴᴀᴋᴀɴ sᴇʙᴀɢᴀɪ *ᴇᴅᴜᴋᴀsɪ ᴘᴇʟᴀᴊᴀʀᴀɴ*, *ᴜɴᴅᴜʜᴀɴ ᴍᴇᴅɪᴀ*, *ɢᴀᴍᴇ*, *ᴘᴇɴᴊᴀɢᴀ ɢʀᴜᴘ*, *ᴅᴀɴ ʟᴀɪɴɴʏᴀ* ʏᴀɴɢ ᴅᴀᴘᴀᴛ ᴍᴇᴍʙᴜᴀᴛ ᴋᴀᴍᴜ ʟᴇʙɪʜ ᴍᴜᴅᴀʜ ᴜɴᴛᴜᴋ ᴍᴇɴᴊᴀʟᴀɴɪ ʜᴀʀɪ-ʜᴀʀɪ:>
+
+ *✎ ᴏᴡɴᴇʀ : ᴏᴋᴛᴀ*
+ 
+ᴊɪᴋᴀ ᴀᴅᴀ ᴍᴀsᴀʟᴀʜ ᴅᴀʟᴀᴍ ᴘᴇɴɢɢᴜɴᴀᴀɴ sɪʟᴀʜᴋᴀɴ ʜᴜʙᴜɴɢɪ ᴄʀᴇᴀᴛᴏʀ ᴜɴᴛᴜᴋ ᴍᴇɴᴀɴʏᴀᴋᴀɴ *.ᴏᴡɴᴇʀ*
+
+┌ ◦ ᴍᴇɴᴀᴍᴘɪʟᴋᴀɴ ғɪᴛᴜʀ ʙᴏᴛ: *.ᴛᴀᴀʟʟ*
+└ ◦ ᴍᴇɴᴀᴍᴘɪʟᴋᴀɴ sɪᴍᴘᴇʟ ᴍᴇɴᴜ: *sɪᴍᴘᴇʟ*
+
+copyright *©TaaOfc* and all rights reserved`, gifPlayback: true }, { quoted: m })
+break
 }
 }
