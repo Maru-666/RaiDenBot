@@ -1,4 +1,4 @@
-require("./settings.js")
+require("./rai.js")
 const useCODE = process.argv.includes("--code")
 const useQR = !useCODE
 
