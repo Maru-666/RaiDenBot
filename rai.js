@@ -6,7 +6,7 @@ const OpenAI = require("openai");
 let setting = require("./key.json");
 const openai = new OpenAI({ apiKey: setting.keyopenai });
 
-module.exports = sansekai = async (client, m, chatUpdate) => {
+module.exports = rai = async (client, m, chatUpdate) => {
   try {
     var body =
       m.mtype === "conversation"
